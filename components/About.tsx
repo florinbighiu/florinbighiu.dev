@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <section id="about" className="border-t border-white/[0.07]">
-      <div className="max-w-3/4 mx-auto px-16 py-28">
+      <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
           <span className="w-6 h-px bg-accent" />
