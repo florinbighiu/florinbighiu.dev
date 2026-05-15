@@ -55,7 +55,7 @@ export default function Hero() {
               href="/Florin.Bighiu.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/10 px-7 py-[0.85rem] rounded-full transition-all duration-200 hover:border-accent hover:text-accent hover:-translate-y-[2px]"
+              className="inline-flex items-center gap-2 font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/[0.18] px-7 py-[0.85rem] rounded-full transition-all duration-200 hover:border-accent hover:text-accent hover:-translate-y-[2px]"
             >
               Download CV
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -106,7 +106,7 @@ export default function Hero() {
                 target={href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
                 title={label}
-                className="flex items-center justify-center w-10 h-10 rounded-[10px] border border-white/10 text-muted transition-all duration-200 hover:border-accent hover:text-accent hover:bg-[rgba(190,255,68,0.08)]"
+                className="flex items-center justify-center w-10 h-10 rounded-[10px] border border-white/[0.18] text-muted transition-all duration-200 hover:border-accent hover:text-accent hover:bg-[rgba(190,255,68,0.08)]"
               >
                 {icon}
               </a>
@@ -115,7 +115,7 @@ export default function Hero() {
         </div>
 
         {/* Avatar Card */}
-        <div className="relative bg-surface border border-white/[0.07] rounded-2xl p-6 overflow-hidden">
+        <div className="relative bg-surface border border-white/[0.12] rounded-2xl p-6 overflow-hidden">
           {/* Top accent line */}
           <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent to-transparent" />
 

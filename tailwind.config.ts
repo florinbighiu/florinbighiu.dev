@@ -22,8 +22,8 @@ const config: Config = {
           dim: "rgba(190,255,68,0.12)",
           glow: "rgba(190,255,68,0.25)",
         },
-        primary: "#EDE8DC",
-        muted: "#6A6880",
+        primary: "#F5F3EE",
+        muted: "#A8A6BE",
         success: "#60d17a",
       },
       fontFamily: {
@@ -32,8 +32,8 @@ const config: Config = {
         mono: ["var(--font-jetbrains)", "monospace"],
       },
       borderColor: {
-        DEFAULT: "rgba(255,255,255,0.07)",
-        accent: "rgba(190,255,68,0.25)",
+        DEFAULT: "rgba(255,255,255,0.12)",
+        accent: "rgba(190,255,68,0.35)",
       },
       keyframes: {
         blobFloat: {

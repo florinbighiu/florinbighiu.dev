@@ -89,7 +89,7 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: s
   return (
     <div
       ref={cardRef}
-      className={`reveal ${delay} project-card bg-surface border border-white/[0.07] rounded-2xl overflow-hidden cursor-pointer group hover:border-[rgba(190,255,68,0.25)]`}
+      className={`reveal ${delay} project-card bg-surface border border-white/[0.12] rounded-2xl overflow-hidden cursor-pointer group hover:border-[rgba(190,255,68,0.25)]`}
     >
       {/* Image */}
       <div className="relative overflow-hidden h-[220px]">
@@ -101,7 +101,7 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: s
         />
         {/* Description overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-bg/95 via-bg/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <p className="text-[0.88rem] text-primary/85 leading-[1.6]">{project.description}</p>
+          <p className="text-[0.88rem] text-primary leading-[1.6]">{project.description}</p>
         </div>
       </div>
 
@@ -115,7 +115,7 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: s
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="font-mono text-[0.65rem] tracking-[0.07em] uppercase text-muted border border-white/[0.07] bg-bg-2 px-[10px] py-[5px] rounded-full"
+              className="font-mono text-[0.65rem] tracking-[0.07em] uppercase text-muted border border-white/[0.12] bg-bg-2 px-[10px] py-[5px] rounded-full"
             >
               {tag}
             </span>
@@ -124,7 +124,7 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: s
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between px-6 py-4 border-t border-white/[0.07]">
+      <div className="flex items-center justify-between px-6 py-4 border-t border-white/[0.12]">
         <a
           href={project.github}
           target="_blank"
@@ -147,7 +147,7 @@ export default function Projects() {
   const delays = ["", "reveal-delay-1", "reveal-delay-2", "reveal-delay-3"];
 
   return (
-    <section id="projects" className="border-t border-white/[0.07]">
+    <section id="projects" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
         <div className="flex items-end justify-between mb-12">
@@ -167,7 +167,7 @@ export default function Projects() {
             href="https://github.com/florinbighiu"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/10 px-6 py-3 rounded-full hover:border-accent hover:text-accent hover:-translate-y-[2px] transition-all duration-200 mb-1"
+            className="font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/[0.18] px-6 py-3 rounded-full hover:border-accent hover:text-accent hover:-translate-y-[2px] transition-all duration-200 mb-1"
           >
             All on GitHub ↗
           </a>

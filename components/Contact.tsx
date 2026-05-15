@@ -50,7 +50,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="border-t border-white/[0.07]">
+    <section id="contact" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
@@ -110,7 +110,7 @@ export default function Contact() {
                 required
                 rows={5}
                 placeholder="Tell me about your project or idea..."
-                className="bg-surface border border-white/[0.07] rounded-[10px] text-primary font-body text-[0.95rem] px-[18px] py-[14px] outline-none focus:border-accent transition-colors duration-200 resize-none placeholder:text-muted/60"
+                className="bg-surface border border-white/[0.12] rounded-[10px] text-primary font-body text-[0.95rem] px-[18px] py-[14px] outline-none focus:border-accent transition-colors duration-200 resize-none placeholder:text-muted/80"
               />
             </div>
 
@@ -144,7 +144,7 @@ function FormField({
         type={type}
         placeholder={placeholder}
         required
-        className="bg-surface border border-white/[0.07] rounded-[10px] text-primary font-body text-[0.95rem] px-[18px] py-[14px] outline-none focus:border-accent transition-colors duration-200 placeholder:text-muted/60"
+        className="bg-surface border border-white/[0.12] rounded-[10px] text-primary font-body text-[0.95rem] px-[18px] py-[14px] outline-none focus:border-accent transition-colors duration-200 placeholder:text-muted/80"
       />
     </div>
   );

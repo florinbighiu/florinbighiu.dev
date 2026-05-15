@@ -16,7 +16,7 @@ const proficiencies = [
 
 function SkillPill({ label }: { label: string }) {
   return (
-    <span className="skill-pill font-mono text-[0.72rem] font-medium tracking-[0.04em] text-primary bg-bg-2 border border-white/[0.07] px-[14px] py-[7px] rounded-[8px] cursor-default">
+    <span className="skill-pill font-mono text-[0.72rem] font-medium tracking-[0.04em] text-primary bg-bg-2 border border-white/[0.12] px-[14px] py-[7px] rounded-[8px] cursor-default">
       {label}
     </span>
   );
@@ -58,7 +58,7 @@ function BentoCard({
   return (
     <div
       ref={ref}
-      className={`reveal ${delay} bg-surface border border-white/[0.07] rounded-2xl p-7 hover:border-[rgba(190,255,68,0.25)] hover:-translate-y-[2px] transition-all duration-300 ${wide ? "col-span-2" : ""} ${className}`}
+      className={`reveal ${delay} bg-surface border border-white/[0.12] rounded-2xl p-7 hover:border-[rgba(190,255,68,0.25)] hover:-translate-y-[2px] transition-all duration-300 ${wide ? "col-span-2" : ""} ${className}`}
     >
       {children}
     </div>
@@ -67,7 +67,7 @@ function BentoCard({
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-t border-white/[0.07]">
+    <section id="skills" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">

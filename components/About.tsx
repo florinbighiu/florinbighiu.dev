@@ -22,7 +22,7 @@ export default function About() {
   const rightRef = useReveal();
 
   return (
-    <section id="about" className="border-t border-white/[0.07]">
+    <section id="about" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
@@ -65,7 +65,7 @@ export default function About() {
               {stats.map(({ num, label }, i) => (
                 <div
                   key={num}
-                  className={`bg-surface border border-white/[0.07] rounded-2xl p-5 hover:border-[rgba(190,255,68,0.25)] transition-colors duration-300 reveal reveal-delay-${i + 1}`}
+                  className={`bg-surface border border-white/[0.12] rounded-2xl p-5 hover:border-[rgba(190,255,68,0.25)] transition-colors duration-300 reveal reveal-delay-${i + 1}`}
                 >
                   <div className="font-display font-extrabold text-[2.2rem] text-accent">{num}</div>
                   <div className="text-[0.82rem] text-muted mt-[2px]">{label}</div>
@@ -79,7 +79,7 @@ export default function About() {
             <ul className="space-y-4 list-none">
               {details.map(({ icon, text, href }) => (
                 <li key={text} className="flex items-center gap-3 text-[0.9rem] text-muted">
-                  <span className="w-8 h-8 bg-surface-2 border border-white/[0.07] rounded-[8px] grid place-items-center text-[0.85rem] shrink-0">
+                  <span className="w-8 h-8 bg-surface-2 border border-white/[0.12] rounded-[8px] grid place-items-center text-[0.85rem] shrink-0">
                     {icon}
                   </span>
                   {href ? (
