@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const frontendSkills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"];
 const backendSkills  = ["Java", "Spring Boot", "Spring Security", "Node.js", "Express", "REST API"];
 const dbSkills       = ["PostgreSQL", "MongoDB", "SQL"];
-const toolSkills     = ["Git", "GitHub", "IntelliJ", "Postman", "Claude Code"];
+const toolSkills     = ["Git", "GitHub", "IntelliJ", "VS Code", "Postman", "Claude Code", "Linux"];
 
 const proficiencies = [
   { name: "React / Next.js",         pct: 85 },
@@ -109,9 +109,8 @@ export default function Skills() {
             <div className="flex flex-col gap-4">
               {proficiencies.map(({ name, pct }) => (
                 <div key={name}>
-                  <div className="flex justify-between mb-[6px]">
+                  <div className="mb-[6px]">
                     <span className="text-[0.85rem] font-medium text-primary">{name}</span>
-                    <span className="font-mono text-[0.72rem] text-accent">{pct}%</span>
                   </div>
                   <div className="h-1 bg-bg-2 rounded-full overflow-hidden">
                     <div className="xp-bar" data-width={pct} />

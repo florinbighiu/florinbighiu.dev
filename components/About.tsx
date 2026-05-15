@@ -4,9 +4,9 @@ import { useReveal } from "@/hooks/useReveal";
 
 const stats = [
   { num: "2",   label: "Years of experience" },
-  { num: "4",   label: "Shipped projects" },
+  { num: "6",   label: "Shipped projects" },
   { num: "15+", label: "Technologies used" },
-  { num: "2",   label: "Stacks mastered" },
+  { num: "1.5y", label: "Bootcamp training" },
 ];
 
 const details = [
@@ -41,7 +41,6 @@ export default function About() {
         {/* Bio – full width */}
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
-            Junior{" "}
             <strong className="text-primary font-medium">Full-Stack Developer</strong>{" "}
             with 2 years of experience, including a{" "}
             <strong className="text-primary font-medium">1.5-year Full-Stack bootcamp</strong>{" "}
@@ -56,7 +55,7 @@ export default function About() {
         </div>
 
         {/* Stats – 4 columns */}
-        <div ref={statsRef} className="reveal reveal-delay-1 grid grid-cols-4 gap-4 mt-12 max-[700px]:grid-cols-2">
+        <div ref={statsRef} className="reveal reveal-delay-1 grid grid-cols-4 gap-5 mt-12 max-[700px]:grid-cols-2">
           {stats.map(({ num, label }) => (
             <div
               key={num}
