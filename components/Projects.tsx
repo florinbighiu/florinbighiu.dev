@@ -97,7 +97,7 @@ function ProjectCard({ project, delay }: { project: typeof projects[0]; delay: s
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-all duration-500 group-hover:scale-105 saturate-75 brightness-90 group-hover:saturate-100 group-hover:brightness-100"
+          className="object-fit transition-all duration-500 group-hover:scale-105 saturate-75 brightness-90 group-hover:saturate-100 group-hover:brightness-100"
         />
         {/* Description overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-bg/95 via-bg/40 to-transparent flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

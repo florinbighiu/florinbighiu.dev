@@ -5,13 +5,13 @@ import { useEffect, useRef } from "react";
 const frontendSkills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"];
 const backendSkills  = ["Java", "Spring Boot", "Spring Security", "Node.js", "Express", "REST API"];
 const dbSkills       = ["PostgreSQL", "MongoDB", "SQL"];
-const toolSkills     = ["Git", "GitHub", "IntelliJ", "VS Code", "Postman", "Claude Code", "Linux"];
+const toolSkills     = ["Git", "GitHub", "IntelliJ", "VS Code", "Claude Code", "Linux", "Postman",];
 
 const proficiencies = [
-  { name: "React / Next.js",         pct: 85 },
+  { name: "JavaScript / TypeScript", pct: 85 },
+  { name: "React / Next.js",         pct: 82 },
   { name: "Java & Spring",           pct: 80 },
-  { name: "JavaScript / TypeScript", pct: 82 },
-  { name: "PostgreSQL / MongoDB",    pct: 75 },
+  { name: "PostgreSQL / MongoDB",    pct: 65 },
 ];
 
 function SkillPill({ label }: { label: string }) {
