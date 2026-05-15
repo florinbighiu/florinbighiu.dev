@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const frontendSkills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"];
 const backendSkills  = ["Java", "Spring Boot", "Spring Security", "Node.js", "Express", "REST API"];
 const dbSkills       = ["PostgreSQL", "MongoDB", "SQL"];
-const toolSkills     = ["Git", "GitHub", "IntelliJ", "Postman"];
+const toolSkills     = ["Git", "GitHub", "IntelliJ", "Postman", "Claude Code"];
 
 const proficiencies = [
   { name: "React / Next.js",         pct: 85 },
