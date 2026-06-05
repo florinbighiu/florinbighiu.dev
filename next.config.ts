@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "portofolio-florinbighiu.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "claritycristal.com",
+      },
     ],
   },
 };
