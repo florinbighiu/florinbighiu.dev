@@ -112,12 +112,13 @@ function ProjectCard({ project, delay }: { project: (typeof projects)[0]; delay:
           </div>
         </div>
         {/* Screenshot */}
-        <div className="relative aspect-video overflow-hidden">
+        <div className="relative overflow-hidden max-h-[200px]">
           <Image
             src={project.image}
             alt={project.title}
-            fill
-            className="object-cover object-top transition-all duration-500 group-hover:scale-105 saturate-75 brightness-90 group-hover:saturate-100 group-hover:brightness-100"
+            width={1280}
+            height={800}
+            className="w-full h-auto transition-all duration-500 group-hover:scale-105 saturate-75 brightness-90 group-hover:saturate-100 group-hover:brightness-100"
           />
           {/* Description overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-bg/95 via-bg/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
