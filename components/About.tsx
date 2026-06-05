@@ -42,7 +42,7 @@ export default function About() {
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
             <strong className="text-primary font-medium">Full-Stack Developer</strong>{" "}
-            with 2 years of experience, including a{" "}
+            with 3 years of experience, including a{" "}
             <strong className="text-primary font-medium">1.5-year Full-Stack bootcamp</strong>{" "}
             complemented by self-driven learning and hands-on project work. I&apos;ve built across
             the stack — React and Next.js on the frontend, Java and Spring on the backend — and
