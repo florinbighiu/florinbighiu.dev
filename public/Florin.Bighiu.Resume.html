@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florin Bighiu — Full-Stack Developer Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Arial', Helvetica, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+      color: #111;
+      background: #fff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 48px;
+    }
+
+    /* ── Header ── */
+    header { margin-bottom: 18px; }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #000;
+    }
+
+    .title {
+      font-size: 11pt;
+      color: #444;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+      font-size: 9.5pt;
+      color: #333;
+    }
+
+    .contact a { color: #333; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1.5px solid #000;
+      margin: 14px 0 10px;
+    }
+
+    /* ── Sections ── */
+    section { margin-bottom: 16px; }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #000;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Summary ── */
+    .summary p { color: #222; }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 4px 12px;
+      font-size: 10pt;
+    }
+
+    .skills-grid .label {
+      font-weight: 700;
+      color: #000;
+      white-space: nowrap;
+    }
+
+    /* ── Projects ── */
+    .project { margin-bottom: 12px; }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .project-name {
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #000;
+    }
+
+    .project-links {
+      font-size: 9pt;
+      color: #444;
+      white-space: nowrap;
+    }
+
+    .project-links a { color: #444; text-decoration: none; }
+    .project-links a:hover { text-decoration: underline; }
+
+    .project-stack {
+      font-size: 9.5pt;
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .project-desc { font-size: 10pt; color: #222; }
+
+    ul { padding-left: 16px; }
+    li { margin-bottom: 2px; }
+
+    /* ── Education ── */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-name { font-weight: 700; }
+    .edu-date { font-size: 9.5pt; color: #555; }
+
+    /* ── Print ── */
+    @media print {
+      body { padding: 28px 36px; font-size: 10pt; }
+      a { color: inherit !important; }
+      @page { margin: 0.5in; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Florin Bighiu</h1>
+    <p class="title">Full-Stack Developer</p>
+    <div class="contact">
+      <span>Iași, Romania</span>
+      <span>+40 748 964 313</span>
+      <a href="mailto:florin.bighiu1@gmail.com">florin.bighiu1@gmail.com</a>
+      <a href="https://florinbighiu.dev" target="_blank">florinbighiu.dev</a>
+      <a href="https://linkedin.com/in/florin-bighiu" target="_blank">linkedin.com/in/florin-bighiu</a>
+      <a href="https://github.com/florinbighiu" target="_blank">github.com/florinbighiu</a>
+    </div>
+  </header>
+
+  <hr />
+
+  <!-- Summary -->
+  <section class="summary">
+    <h2>Summary</h2>
+    <p>
+      Full-Stack Developer with 3 years of experience building scalable web applications — including a 1.5-year intensive
+      full-stack bootcamp and continuous self-directed learning. Proficient across the entire stack: React and Next.js on the
+      frontend, Java and Spring Boot on the backend, with additional experience in the MERN stack. Comfortable taking features
+      from design to deployment, with a strong focus on clean code, performance, and user experience.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span class="label">Frontend</span>
+      <span>React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS</span>
+
+      <span class="label">Backend</span>
+      <span>Java, Spring Boot, Spring Security, Node.js, Express, REST APIs</span>
+
+      <span class="label">Databases</span>
+      <span>PostgreSQL, MongoDB, SQL</span>
+
+      <span class="label">Tools</span>
+      <span>Git, GitHub, Postman, IntelliJ IDEA, VS Code, Linux</span>
+
+      <span class="label">Concepts</span>
+      <span>Multi-tenancy, JWT Authentication, MVC, OOP, Responsive Design, API Integration</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">ClarityCristal — Business Website</span>
+        <span class="project-links">
+          <a href="https://claritycristal.com" target="_blank">claritycristal.com</a>
+        </span>
+      </div>
+      <p class="project-stack">Next.js · React · TypeScript · Tailwind CSS</p>
+      <p class="project-desc">
+        Professional service website for a Lanzarote-based cleaning company. Implemented bilingual responsive layout,
+        before/after image comparison slider, tiered pricing UI, and WhatsApp API booking integration. Deployed and
+        maintained in production.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Momentum — Schedule Management App</span>
+        <span class="project-links">
+          <a href="https://momentum-pi-wheat.vercel.app" target="_blank">momentum-pi-wheat.vercel.app</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com/florinbighiu/manifest-app" target="_blank">GitHub</a>
+        </span>
+      </div>
+      <p class="project-stack">React · JavaScript · Java · Spring Boot · PostgreSQL</p>
+      <p class="project-desc">
+        Full-stack productivity application with multi-tenant organisation switcher, JWT-based user authentication,
+        and task management. Clean, accessible UX designed for productivity-focused teams.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">EcomX — E-Commerce Platform</span>
+        <span class="project-links">
+          <a href="https://github.com/florinbighiu/El-proyecte-grande" target="_blank">GitHub</a>
+        </span>
+      </div>
+      <p class="project-stack">React · Java · Spring Boot · Tailwind CSS · PostgreSQL</p>
+      <p class="project-desc">
+        Full-featured e-commerce application with product browsing, shopping cart, user authentication, and order
+        processing. Built RESTful backend with Spring Boot and a responsive React frontend.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">SWAPI Explorer — Star Wars API Browser</span>
+        <span class="project-links">
+          <a href="https://github.com/florinbighiu/free-style-mern-project" target="_blank">GitHub</a>
+        </span>
+      </div>
+      <p class="project-stack">React · Node.js · Express · MongoDB</p>
+      <p class="project-desc">
+        MERN stack application integrating the Star Wars public API. Users can explore characters, starships, and
+        planets with dynamic search, pagination, and rich data display.
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <span class="project-name">Employees Madness — HR Management Platform</span>
+        <span class="project-links">
+          <a href="https://github.com/florinbighiu/the-employee-madness" target="_blank">GitHub</a>
+        </span>
+      </div>
+      <p class="project-stack">React · Node.js · Express · MongoDB</p>
+      <p class="project-desc">
+        Admin-focused HR platform for managing employee records, departments, and roles at scale. Full CRUD operations
+        with a clean dashboard interface built on the MERN stack.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="edu-header">
+      <span class="edu-name">Full-Stack Development Bootcamp</span>
+      <span class="edu-date">1.5 years · Completed</span>
+    </div>
+    <p style="font-size:9.5pt; color:#444;">Intensive program covering frontend, backend, databases, and software engineering fundamentals</p>
+
+    <div style="margin-top: 8px;">
+      <div class="edu-header">
+        <span class="edu-name">Self-Directed Learning &amp; Personal Projects</span>
+        <span class="edu-date">Ongoing</span>
+      </div>
+      <p style="font-size:9.5pt; color:#444;">Continuous learning through building production projects, open-source contribution, and staying current with the React and Java ecosystems</p>
+    </div>
+  </section>
+
+</body>
+</html>
