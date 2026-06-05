@@ -52,24 +52,21 @@ export default function Contact() {
   return (
     <section id="contact" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
-        {/* Header */}
-        <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
-          <span className="w-6 h-px bg-accent" />
-          Get in touch
-        </div>
-        <h2
-          className="font-display font-extrabold leading-[1.1] tracking-[-0.02em]"
-          style={{ fontSize: "clamp(2rem,4vw,3.2rem)" }}
-        >
-          Let&apos;s work together
-        </h2>
-
         {/* Grid */}
-        <div className="grid grid-cols-[1fr_1.3fr] gap-20 mt-14 items-start max-[900px]:grid-cols-1 max-[900px]:gap-12">
+        <div className="grid grid-cols-[1fr_1.3fr] gap-20 items-start max-[900px]:grid-cols-1 max-[900px]:gap-12">
 
           {/* Left */}
           <div ref={leftRef} className="reveal">
-            <h3 className="font-display font-bold text-[1.5rem] mb-3">Have a project in mind?</h3>
+            <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
+              <span className="w-6 h-px bg-accent" />
+              Get in touch
+            </div>
+            <h2
+              className="font-display font-extrabold leading-[1.1] tracking-[-0.02em] mb-5"
+              style={{ fontSize: "clamp(2rem,4vw,3.2rem)" }}
+            >
+              Let&apos;s work together
+            </h2>
             <p className="text-muted leading-[1.7] mb-8">
               Whether you&apos;re looking to hire, collaborate on something interesting, or just want to
               connect — my inbox is always open. I&apos;ll get back to you within a day.
