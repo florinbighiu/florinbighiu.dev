@@ -189,7 +189,7 @@ export default function Projects() {
     <section id="projects" className="border-t border-white/[0.12]">
       <div className="max-w-[1200px] mx-auto px-16 py-28">
         {/* Header */}
-        <div className="flex items-end justify-between mb-12">
+        <div className="flex items-end justify-between mb-12 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-5">
           <div>
             <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
