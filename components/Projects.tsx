@@ -45,6 +45,7 @@ const projects = [
     tags: ["React", "Node.js", "Express", "MongoDB"],
     image: "/screenshots/swapi.png",
     github: "https://github.com/florinbighiu/free-style-mern-project",
+    live: "https://free-style-mern-project.vercel.app",
   },
   {
     num: "05",
