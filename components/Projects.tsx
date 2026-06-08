@@ -21,9 +21,9 @@ const projects = [
     description:
       "Full-featured e-commerce platform with product browsing, cart management, user authentication, and order processing — built for a seamless shopping experience.",
     tags: ["React", "Java", "Spring", "Tailwind", "PostgreSQL"],
-    image:
-      "https://portofolio-florinbighiu.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FEcomX.09b6c95a.png&w=3840&q=75",
+    image: "/screenshots/ecomx.png",
     github: "https://github.com/florinbighiu/El-proyecte-grande",
+    live: "https://el-proyecte-grande.vercel.app",
   },
   {
     num: "03",
