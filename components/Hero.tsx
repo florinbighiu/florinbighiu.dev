@@ -52,7 +52,7 @@ export default function Hero() {
               Let's talk
             </a>
             <a
-              href="C:\Users\adria\Downloads\florinbighiu.dev\cv\FLORIN_BIGHIU_Resume.pdf"
+              href="/FLORIN_BIGHIU_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/[0.18] px-7 py-[0.85rem] rounded-full transition-all duration-200 hover:border-accent hover:text-accent hover:-translate-y-[2px]"
