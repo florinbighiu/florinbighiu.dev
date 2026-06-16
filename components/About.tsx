@@ -38,22 +38,17 @@ export default function About() {
           About me
         </h2>
 
-        {/* Bio – full width */}
+        {/* Bio – full width (exact CV summary) */}
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
-            <strong className="text-primary font-medium">QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
-            with 3 years of hands-on experience through self-study, personal projects, and an
-            intensive{" "}
-            <strong className="text-primary font-medium">1.5-year full-stack bootcamp</strong>.
-            My focus is quality engineering — <strong className="text-primary font-medium">Playwright
-            E2E automation</strong>, CI/CD pipelines with <strong className="text-primary font-medium">GitHub
-            Actions</strong>, API testing with Postman, and structured bug reporting.
-          </p>
-          <p>
-            That QA work sits on a real full-stack foundation: I&apos;ve built and shipped apps with
-            React and Next.js on the frontend, Java and Spring Boot on the backend, and SQL/PostgreSQL
-            data layers — so I test with a clear understanding of how the whole system fits together.
-            I&apos;m looking to grow into a dedicated QA automation role while contributing across the stack.
+            <strong className="text-primary font-medium">Full Stack Developer</strong> with 3 years of
+            hands-on experience through self-study, personal projects, and an intensive 1.5-year
+            full-stack bootcamp. Skilled in React, Java, JavaScript/TypeScript, and REST APIs, with a
+            focus on <strong className="text-primary font-medium">Playwright E2E automation</strong>,
+            CI/CD pipelines with GitHub Actions, API testing with Postman, structured bug reporting, and{" "}
+            <strong className="text-primary font-medium">AI agentic workflows</strong>.
+            Proactive and detail-oriented, with a continuous learning mindset and a practical approach
+            to problem-solving.
           </p>
         </div>
 
