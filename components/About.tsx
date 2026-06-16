@@ -41,7 +41,7 @@ export default function About() {
         {/* Bio – full width */}
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
-            <strong className="text-primary font-medium">Full-Stack Developer</strong>{" "}
+            <strong className="text-primary font-medium">Full-Stack Developer and QA Automation Engineer</strong>{" "}
             with 3 years of experience, including a{" "}
             <strong className="text-primary font-medium">1.5-year Full-Stack bootcamp</strong>{" "}
             complemented by self-driven learning and hands-on project work. I&apos;ve built across
