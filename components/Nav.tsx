@@ -49,7 +49,7 @@ export default function Nav() {
 
       {/* CTA */}
       <a
-        href="/Florin.Bighiu.pdf"
+        href="../public/FLORIN_BIGHIU_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="font-mono text-[0.78rem] font-medium tracking-[0.08em] uppercase text-bg bg-accent px-5 py-2 rounded-full hover:opacity-85 hover:-translate-y-px transition-all duration-200"
