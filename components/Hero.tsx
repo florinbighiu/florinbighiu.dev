@@ -33,7 +33,7 @@ export default function Hero() {
 
           {/* Sub */}
           <p className="mt-6 text-[1.1rem] text-muted leading-[1.7] max-w-[480px]">
-            <strong className="text-primary font-medium">Full-Stack Developer</strong> building
+            <strong className="text-primary font-medium">Full-Stack Developer and QA Automation Engineer</strong> building
             scalable web apps with{" "}
             <strong className="text-primary font-medium">React</strong> on the frontend and{" "}
             <strong className="text-primary font-medium">Java / Spring</strong> on the backend.
@@ -52,7 +52,7 @@ export default function Hero() {
               Let's talk
             </a>
             <a
-              href="/Florin.Bighiu.pdf"
+              href="../cv/FLORIN_BIGHIU_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-primary border border-white/[0.18] px-7 py-[0.85rem] rounded-full transition-all duration-200 hover:border-accent hover:text-accent hover:-translate-y-[2px]"
@@ -66,7 +66,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Socials */}
           <div className="flex gap-3 mt-8">
             {[
               {
