@@ -51,7 +51,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="border-t border-white/[0.12]">
-      <div className="max-w-[1200px] mx-auto px-16 py-28">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 lg:px-16 py-20 lg:py-28">
         {/* Grid */}
         <div className="grid grid-cols-[1fr_1.3fr] gap-20 items-start max-[900px]:grid-cols-1 max-[900px]:gap-12">
 
@@ -68,8 +68,8 @@ export default function Contact() {
               Let&apos;s work together
             </h2>
             <p className="text-muted leading-[1.7] mb-8">
-              Whether you&apos;re looking to hire, collaborate on something interesting, or just want to
-              connect — my inbox is always open. I&apos;ll get back to you within a day.
+              Whether you&apos;re hiring for a QA automation or full-stack role, want to collaborate, or
+              just want to connect — my inbox is always open. I&apos;ll get back to you within a day.
             </p>
             <a
               href="mailto:florin.bighiu1@gmail.com"
@@ -89,7 +89,7 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="reveal reveal-delay-1 flex flex-col gap-5"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 max-[480px]:grid-cols-1">
               <FormField label="Name"  id="name"  type="text"  placeholder="Your name" />
               <FormField label="Email" id="email" type="email" placeholder="your@email.com" />
             </div>

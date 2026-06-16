@@ -24,6 +24,23 @@ test.describe("Navigation", () => {
     }
   });
 
+  test("mobile menu opens and navigates to a section", async ({ page }) => {
+    // Only meaningful on viewports where the desktop links are hidden.
+    test.skip(
+      (page.viewportSize()?.width ?? 0) >= 768,
+      "Mobile menu is only shown below the md breakpoint"
+    );
+
+    await page.getByRole("button", { name: /open menu/i }).click();
+    const panel = page.locator("#mobile-menu");
+    await expect(panel).toBeVisible();
+
+    await panel.getByRole("link", { name: "Contact" }).click();
+    await expect(page).toHaveURL(/#contact$/);
+    await expect(panel).toBeHidden();
+    await expect(page.locator("#contact")).toBeInViewport();
+  });
+
   test("external project links use safe target/rel attributes", async ({ page }) => {
     const githubProfile = page.getByRole("link", { name: /all on github/i });
     await expect(githubProfile).toHaveAttribute("target", "_blank");

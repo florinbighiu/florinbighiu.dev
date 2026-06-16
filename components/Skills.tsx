@@ -2,16 +2,19 @@
 
 import { useEffect, useRef } from "react";
 
-const frontendSkills = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"];
-const backendSkills  = ["Java", "Spring Boot", "Spring Security", "Node.js", "Express", "REST API"];
-const dbSkills       = ["PostgreSQL", "MongoDB", "SQL"];
-const toolSkills     = ["Git", "GitHub", "IntelliJ", "VS Code", "Claude Code", "Linux", "Postman",];
+const testingSkills  = ["Playwright E2E", "Jest", "JUnit", "Postman / API Testing", "Unit Testing", "Regression Testing", "Bug Reporting"];
+const frontendSkills = ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"];
+const backendSkills  = ["Java", "Spring Boot", "REST APIs", "Node.js", "Express"];
+const dbSkills       = ["PostgreSQL", "SQL", "MongoDB"];
+const aiSkills       = ["Claude Code", "RAG", "Tool calling", "AI-assisted dev"];
+const toolSkills     = ["Git", "GitHub Actions", "CI/CD", "Agile", "IntelliJ", "VS Code", "Linux"];
 
 const proficiencies = [
-  { name: "JavaScript / TypeScript", pct: 85 },
-  { name: "React / Next.js",         pct: 82 },
-  { name: "Java & Spring",           pct: 80 },
-  { name: "PostgreSQL / MongoDB",    pct: 65 },
+  { name: "Playwright E2E & Test Automation", pct: 85 },
+  { name: "JavaScript / TypeScript",          pct: 85 },
+  { name: "React / Next.js",                  pct: 82 },
+  { name: "CI/CD & API Testing",              pct: 80 },
+  { name: "Java / Spring Boot",               pct: 78 },
 ];
 
 function SkillPill({ label }: { label: string }) {
@@ -58,21 +61,30 @@ function BentoCard({
   return (
     <div
       ref={ref}
-      className={`reveal ${delay} bg-surface border border-white/[0.12] rounded-2xl p-7 hover:border-[rgba(190,255,68,0.25)] hover:-translate-y-[2px] transition-all duration-300 ${wide ? "col-span-2" : ""} ${className}`}
+      className={`reveal ${delay} bg-surface border border-white/[0.12] rounded-2xl p-7 hover:border-[rgba(190,255,68,0.25)] hover:-translate-y-[2px] transition-all duration-300 ${wide ? "col-span-2 max-[560px]:col-span-1" : ""} ${className}`}
     >
       {children}
     </div>
   );
 }
 
+function CardHeader({ kicker, title }: { kicker: string; title: string }) {
+  return (
+    <>
+      <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">{kicker}</div>
+      <div className="font-display font-bold text-[1.1rem] mb-5">{title}</div>
+    </>
+  );
+}
+
 export default function Skills() {
   return (
     <section id="skills" className="border-t border-white/[0.12]">
-      <div className="max-w-[1200px] mx-auto px-16 py-28">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 lg:px-16 py-20 lg:py-28">
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
           <span className="w-6 h-px bg-accent" />
-          What I use
+          How I work
         </div>
         <h2
           className="font-display font-extrabold leading-[1.1] tracking-[-0.02em]"
@@ -80,32 +92,25 @@ export default function Skills() {
         >
           Skills &amp; Tech
         </h2>
+        <p className="text-muted leading-[1.7] mt-4 max-w-[640px]">
+          Quality engineering first — automated and manual testing across the stack — backed by
+          full-stack development and AI-assisted workflows.
+        </p>
 
         {/* Bento grid */}
-        <div className="grid grid-cols-4 gap-4 mt-12 max-[900px]:grid-cols-2">
+        <div className="grid grid-cols-4 gap-4 mt-12 max-[900px]:grid-cols-2 max-[560px]:grid-cols-1">
 
-          {/* Frontend — 2 cols */}
+          {/* Testing & QA — 2 cols (lead) */}
           <BentoCard wide delay="">
-            <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">Frontend</div>
-            <div className="font-display font-bold text-[1.1rem] mb-5">UI & Client Side</div>
+            <CardHeader kicker="Testing & QA" title="Quality Engineering" />
             <div className="flex flex-wrap gap-[7px]">
-              {frontendSkills.map((s) => <SkillPill key={s} label={s} />)}
-            </div>
-          </BentoCard>
-
-          {/* Backend — 2 cols */}
-          <BentoCard wide delay="reveal-delay-1">
-            <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">Backend</div>
-            <div className="font-display font-bold text-[1.1rem] mb-5">Server & API</div>
-            <div className="flex flex-wrap gap-[7px]">
-              {backendSkills.map((s) => <SkillPill key={s} label={s} />)}
+              {testingSkills.map((s) => <SkillPill key={s} label={s} />)}
             </div>
           </BentoCard>
 
           {/* Proficiency bars — 2 cols */}
-          <BentoCard wide delay="reveal-delay-2">
-            <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">Proficiency</div>
-            <div className="font-display font-bold text-[1.1rem] mb-6">Core Strengths</div>
+          <BentoCard wide delay="reveal-delay-1">
+            <CardHeader kicker="Proficiency" title="Core Strengths" />
             <div className="flex flex-col gap-4">
               {proficiencies.map(({ name, pct }) => (
                 <div key={name}>
@@ -120,19 +125,41 @@ export default function Skills() {
             </div>
           </BentoCard>
 
+          {/* Frontend — 2 cols */}
+          <BentoCard wide delay="reveal-delay-2">
+            <CardHeader kicker="Frontend" title="UI & Client Side" />
+            <div className="flex flex-wrap gap-[7px]">
+              {frontendSkills.map((s) => <SkillPill key={s} label={s} />)}
+            </div>
+          </BentoCard>
+
+          {/* Backend — 2 cols */}
+          <BentoCard wide delay="reveal-delay-3">
+            <CardHeader kicker="Backend" title="Server & API" />
+            <div className="flex flex-wrap gap-[7px]">
+              {backendSkills.map((s) => <SkillPill key={s} label={s} />)}
+            </div>
+          </BentoCard>
+
           {/* Databases — 1 col */}
-          <BentoCard delay="reveal-delay-3">
-            <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">Databases</div>
-            <div className="font-display font-bold text-[1.1rem] mb-5">Data Layer</div>
+          <BentoCard delay="">
+            <CardHeader kicker="Databases" title="Data Layer" />
             <div className="flex flex-wrap gap-[7px]">
               {dbSkills.map((s) => <SkillPill key={s} label={s} />)}
             </div>
           </BentoCard>
 
-          {/* Tools — 1 col */}
-          <BentoCard delay="reveal-delay-4">
-            <div className="font-mono text-[0.7rem] tracking-[0.1em] uppercase text-accent mb-[6px]">Tools</div>
-            <div className="font-display font-bold text-[1.1rem] mb-5">Dev Workflow</div>
+          {/* AI-assisted — 1 col */}
+          <BentoCard delay="reveal-delay-1">
+            <CardHeader kicker="AI-Assisted" title="Modern Workflow" />
+            <div className="flex flex-wrap gap-[7px]">
+              {aiSkills.map((s) => <SkillPill key={s} label={s} />)}
+            </div>
+          </BentoCard>
+
+          {/* Tools & CI/CD — 2 cols */}
+          <BentoCard wide delay="reveal-delay-2">
+            <CardHeader kicker="Tools & CI/CD" title="Dev Workflow" />
             <div className="flex flex-wrap gap-[7px]">
               {toolSkills.map((s) => <SkillPill key={s} label={s} />)}
             </div>

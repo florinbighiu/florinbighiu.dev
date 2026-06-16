@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center px-16 pt-32 pb-24 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center px-6 sm:px-10 lg:px-16 pt-32 pb-20 sm:pb-24 overflow-hidden"
     >
       {/* Grid background */}
       <div className="absolute inset-0 hero-grid pointer-events-none" />
@@ -33,11 +33,12 @@ export default function Hero() {
 
           {/* Sub */}
           <p className="mt-6 text-[1.1rem] text-muted leading-[1.7] max-w-[480px]">
-            <strong className="text-primary font-medium">Full-Stack Developer and QA Automation Engineer</strong> building
-            scalable web apps with{" "}
-            <strong className="text-primary font-medium">React</strong> on the frontend and{" "}
-            <strong className="text-primary font-medium">Java / Spring</strong> on the backend.
-            Focused on clean code, great UX, and fast delivery.
+            <strong className="text-primary font-medium">QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
+            specializing in <strong className="text-primary font-medium">Playwright E2E</strong> testing,{" "}
+            <strong className="text-primary font-medium">CI/CD with GitHub Actions</strong>, and API testing —
+            built on hands-on <strong className="text-primary font-medium">React</strong>,{" "}
+            <strong className="text-primary font-medium">Java / Spring</strong> full-stack experience.
+            Focused on reliable releases, clean code, and structured bug reporting.
           </p>
 
           {/* CTAs */}
@@ -130,7 +131,7 @@ export default function Hero() {
           <div className="mt-5 flex flex-col gap-[5px]">
             <div className="font-display font-bold text-[1.1rem] text-primary">Florin Bighiu</div>
             <div className="font-mono text-[0.72rem] tracking-[0.08em] uppercase text-accent">
-              Full-Stack Developer
+              QA Engineer · Full-Stack Dev
             </div>
             <div className="text-[0.85rem] text-muted mt-1 flex items-center gap-1">
               <svg width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

@@ -27,13 +27,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Florin Bighiu — Full-Stack Developer",
+  title: "Florin Bighiu — QA Automation & Full-Stack Developer",
   description:
-    "Full-Stack Developer specializing in React, Next.js, Java, and Spring Boot. Building scalable web apps with clean code and great UX.",
+    "QA Automation Engineer and Full-Stack Developer specializing in Playwright E2E testing, CI/CD with GitHub Actions, and API testing with Postman — backed by hands-on React, Next.js, Java, and Spring Boot experience.",
   openGraph: {
-    title: "Florin Bighiu — Full-Stack Developer",
+    title: "Florin Bighiu — QA Automation & Full-Stack Developer",
     description:
-      "Full-Stack Developer specializing in React, Next.js, Java, and Spring Boot.",
+      "QA Automation Engineer and Full-Stack Developer — Playwright E2E, CI/CD, API testing, React, Next.js, Java and Spring Boot.",
     type: "website",
   },
 };

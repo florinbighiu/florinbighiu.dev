@@ -6,54 +6,54 @@ import { useEffect, useRef } from "react";
 const projects = [
   {
     num: "01",
-    category: "Business Site",
-    title: "ClarityCristal",
-    description:
-      "Professional cleaning service website for a Lanzarote-based business — featuring before/after image sliders, tiered pricing, WhatsApp booking integration, and a bilingual responsive layout.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
-    image: "/screenshots/claritycristal.png",
-    live: "https://claritycristal.com",
-  },
-  {
-    num: "02",
-    category: "E-Commerce",
+    category: "E-Commerce · QA",
     title: "EcomX",
     description:
-      "Full-featured e-commerce platform with product browsing, cart management, user authentication, and order processing — built for a seamless shopping experience.",
-    tags: ["React", "Java", "Spring", "Tailwind", "PostgreSQL"],
+      "Full-stack store with product browsing, filtering, cart, secure login, and admin product management. QA focus: manual test cases for auth, CRUD, cart and filtering; Postman API checks; and Playwright smoke/regression suites running in GitHub Actions CI.",
+    tags: ["React", "Java", "Spring Boot", "PostgreSQL", "Postman", "Playwright"],
     image: "/screenshots/ecomx.png",
     github: "https://github.com/florinbighiu/El-proyecte-grande",
     live: "https://el-proyecte-grande.vercel.app",
   },
   {
-    num: "03",
-    category: "Productivity",
+    num: "02",
+    category: "Productivity · QA",
     title: "Momentum",
     description:
-      "Schedule management app with multi-tenant org switcher, user authentication, and task organization. Clean UX built for productivity-focused teams.",
-    tags: ["React", "JavaScript", "Java", "Spring", "PostgreSQL"],
+      "Full-stack task management app with authentication, organization switching, and task status updates. QA focus: regression scenarios around login, org switching, task creation/update, and permission-sensitive flows.",
+    tags: ["React", "Java", "Spring Boot", "PostgreSQL", "Clerk"],
     image: "/screenshots/momentum.png",
     github: "https://github.com/florinbighiu/manifest-app",
     live: "https://momentum-pi-wheat.vercel.app",
   },
   {
+    num: "03",
+    category: "Client Site · QA",
+    title: "ClarityCristal",
+    description:
+      "Production marketing website for a window and solar-panel cleaning business, with services, contact, and booking paths. QA focus: manual validation of contact/booking flows, responsive layouts, and cross-device behaviour.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Manual QA"],
+    image: "/screenshots/claritycristal.png",
+    live: "https://claritycristal.com",
+  },
+  {
     num: "04",
-    category: "MERN Stack",
+    category: "MERN Stack · QA",
     title: "SWAPI Explorer",
     description:
-      "MERN stack app integrating the Star Wars API to let users explore ships, characters, and planets — with dynamic search and rich data.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+      "MERN stack app integrating the Star Wars API to let users explore ships, characters, and planets — with dynamic search and rich data. QA focus: manual checks on search, data fetching/empty states, and responsive cross-device layouts.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Manual QA"],
     image: "/screenshots/swapi.png",
     github: "https://github.com/florinbighiu/free-style-mern-project",
     live: "https://free-style-mern-project.vercel.app",
   },
   {
     num: "05",
-    category: "HR Tools",
+    category: "HR Tools · QA",
     title: "Employees Madness",
     description:
-      "HR management platform built on the MERN stack for administrators to manage employee records, departments, and roles — efficiently and at scale.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+      "HR management platform built on the MERN stack for administrators to manage employee records, departments, and roles — efficiently and at scale. QA focus: test scenarios around CRUD operations, form validation, and record filtering.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Manual QA"],
     image:
       "https://portofolio-florinbighiu.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FemployeeMadness.44c1bb59.png&w=3840&q=75",
     github: "https://github.com/florinbighiu/the-employee-madness",
@@ -188,7 +188,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="border-t border-white/[0.12]">
-      <div className="max-w-[1200px] mx-auto px-16 py-28">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 lg:px-16 py-20 lg:py-28">
         {/* Header */}
         <div className="flex items-end justify-between mb-12 max-[540px]:flex-col max-[540px]:items-start max-[540px]:gap-5">
           <div>

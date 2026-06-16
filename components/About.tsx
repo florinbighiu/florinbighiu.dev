@@ -3,14 +3,14 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const stats = [
-  { num: "2",   label: "Years of experience" },
-  { num: "6",   label: "Shipped projects" },
-  { num: "15+", label: "Technologies used" },
-  { num: "1.5y", label: "Bootcamp training" },
+  { num: "3",   label: "Years hands-on" },
+  { num: "E2E", label: "Playwright automation" },
+  { num: "5",   label: "Projects shipped" },
+  { num: "1.5y", label: "Full-stack bootcamp" },
 ];
 
 const details = [
-  { icon: "📞", text: "+40 748 964 313",              href: "tel:+40748964313" },
+  { icon: "📞", text: "+40 748 389 067",              href: "tel:+40748389067" },
   { icon: "📍", text: "Iași, Romania",                href: null },
   { icon: "✉️", text: "florin.bighiu1@gmail.com",     href: "mailto:florin.bighiu1@gmail.com" },
   { icon: "💼", text: "linkedin.com/in/florin-bighiu", href: "https://www.linkedin.com/in/florin-bighiu/" },
@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <section id="about" className="border-t border-white/[0.12]">
-      <div className="max-w-[1200px] mx-auto px-16 py-28">
+      <div className="max-w-[1200px] mx-auto px-6 sm:px-10 lg:px-16 py-20 lg:py-28">
 
         {/* Header */}
         <div className="font-mono text-[0.72rem] tracking-[0.12em] uppercase text-accent mb-3 flex items-center gap-3">
@@ -41,16 +41,19 @@ export default function About() {
         {/* Bio – full width */}
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
-            <strong className="text-primary font-medium">Full-Stack Developer and QA Automation Engineer</strong>{" "}
-            with 3 years of experience, including a{" "}
-            <strong className="text-primary font-medium">1.5-year Full-Stack bootcamp</strong>{" "}
-            complemented by self-driven learning and hands-on project work. I&apos;ve built across
-            the stack — React and Next.js on the frontend, Java and Spring on the backend — and
-            I&apos;m comfortable working with both relational and non-relational databases.
+            <strong className="text-primary font-medium">QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
+            with 3 years of hands-on experience through self-study, personal projects, and an
+            intensive{" "}
+            <strong className="text-primary font-medium">1.5-year full-stack bootcamp</strong>.
+            My focus is quality engineering — <strong className="text-primary font-medium">Playwright
+            E2E automation</strong>, CI/CD pipelines with <strong className="text-primary font-medium">GitHub
+            Actions</strong>, API testing with Postman, and structured bug reporting.
           </p>
           <p>
-            I&apos;m looking for a professional role where I can keep growing and contribute
-            to a team building real products.
+            That QA work sits on a real full-stack foundation: I&apos;ve built and shipped apps with
+            React and Next.js on the frontend, Java and Spring Boot on the backend, and SQL/PostgreSQL
+            data layers — so I test with a clear understanding of how the whole system fits together.
+            I&apos;m looking to grow into a dedicated QA automation role while contributing across the stack.
           </p>
         </div>
 
