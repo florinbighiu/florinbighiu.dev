@@ -5,7 +5,21 @@
 /* ── Custom scrollbar ────────────────────────────── */
 ::-webkit-scrollbar        { width: 4px; }
 ::-webkit-scrollbar-track  { background: #07060D; }
-::-webkit-scrollbar-thumb  { background: #BEFF44; border-radius: 99px; }
+::-webkit-scrollbar-thumb  { background: rgba(190,255,68,0.55); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #BEFF44; }
+
+/* ── Text selection ──────────────────────────────── */
+::selection {
+  background: rgba(190,255,68,0.85);
+  color: #07060D;
+}
+
+/* ── Keyboard focus ──────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #BEFF44;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
 
 /* ── Grain overlay ───────────────────────────────── */
 body::before {
@@ -78,3 +92,56 @@ body::before {
   transition: width 0.25s;
 }
 .nav-link:hover::after { width: 100%; }
+
+/* ── Accent text glow ────────────────────────────── */
+.accent-glow {
+  text-shadow: 0 0 48px rgba(190, 255, 68, 0.45),
+               0 0 16px rgba(190, 255, 68, 0.25);
+}
+
+/* ── Page-load entrance ──────────────────────────── */
+@keyframes enterUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.enter {
+  opacity: 0;
+  animation: enterUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Scroll cue ──────────────────────────────────── */
+.scroll-cue-track {
+  width: 22px;
+  height: 36px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 99px;
+  display: grid;
+  place-items: start center;
+  padding-top: 6px;
+}
+.scroll-cue-track::after {
+  content: '';
+  width: 3px;
+  height: 7px;
+  border-radius: 99px;
+  background: #BEFF44;
+  animation: scrollCue 1.8s ease-in-out infinite;
+}
+@keyframes scrollCue {
+  0%   { opacity: 0; transform: translateY(0); }
+  35%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(12px); }
+}
+
+/* ── Reduced-motion guard ────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .enter  { opacity: 1 !important; transform: none !important; }
+  .project-card { transform: none !important; }
+}

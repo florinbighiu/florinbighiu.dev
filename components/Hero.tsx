@@ -19,20 +19,20 @@ export default function Hero() {
         {/* Left */}
         <div>
           {/* Available tag */}
-          <div className="inline-flex items-center gap-2 font-mono text-[0.75rem] tracking-[0.1em] uppercase text-accent border border-[rgba(190,255,68,0.25)] bg-[rgba(190,255,68,0.08)] px-4 py-[0.4rem] rounded-full mb-6">
+          <div className="enter inline-flex items-center gap-2 font-mono text-[0.75rem] tracking-[0.1em] uppercase text-accent border border-[rgba(190,255,68,0.25)] bg-[rgba(190,255,68,0.08)] px-4 py-[0.4rem] rounded-full mb-6" style={{ animationDelay: "0.05s" }}>
             <span className="w-[6px] h-[6px] bg-accent rounded-full animate-pulse-dot" />
             Available for work
           </div>
 
           {/* Name */}
-          <h1 className="font-display font-extrabold leading-[0.95] tracking-[-0.02em] text-primary"
-              style={{ fontSize: "clamp(3.5rem,7vw,6.5rem)" }}>
+          <h1 className="enter font-display font-extrabold leading-[0.95] tracking-[-0.02em] text-primary"
+              style={{ fontSize: "clamp(3.5rem,7vw,6.5rem)", animationDelay: "0.15s" }}>
             FLORIN
-            <em className="not-italic text-accent block">BIGHIU.</em>
+            <em className="not-italic text-accent accent-glow block">BIGHIU.</em>
           </h1>
 
           {/* Sub */}
-          <p className="mt-6 text-[1.1rem] text-muted leading-[1.7] max-w-[480px]">
+          <p className="enter mt-6 text-[1.1rem] text-muted leading-[1.7] max-w-[480px]" style={{ animationDelay: "0.25s" }}>
             <strong className="text-primary font-medium">QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
             specializing in <strong className="text-primary font-medium">Playwright E2E</strong> testing,{" "}
             <strong className="text-primary font-medium">CI/CD with GitHub Actions</strong>, and API testing —
@@ -42,7 +42,7 @@ export default function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex gap-4 mt-10 flex-wrap">
+          <div className="enter flex gap-4 mt-10 flex-wrap" style={{ animationDelay: "0.35s" }}>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 font-mono text-[0.8rem] font-medium tracking-[0.07em] uppercase text-bg bg-accent px-7 py-[0.85rem] rounded-full transition-all duration-200 hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(190,255,68,0.3)]"
@@ -67,7 +67,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex gap-3 mt-8">
+          <div className="enter flex gap-3 mt-8" style={{ animationDelay: "0.45s" }}>
             {[
               {
                 href: "https://www.linkedin.com/in/florin-bighiu/",
@@ -115,18 +115,20 @@ export default function Hero() {
         </div>
 
         {/* Avatar Card */}
-        <div className="relative bg-surface border border-white/[0.12] rounded-2xl p-6 overflow-hidden">
+        <div className="enter group relative bg-surface border border-white/[0.12] rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-1 hover:shadow-[0_24px_60px_-20px_rgba(190,255,68,0.25)]" style={{ animationDelay: "0.3s" }}>
           {/* Top accent line */}
           <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent to-transparent" />
 
-          <Image
-            src="https://portofolio-florinbighiu.vercel.app/_next/image?url=%2F283185044_2606893879444159_1671680474858766700_n.jpg&w=640&q=95"
-            alt="Florin Bighiu"
-            width={300}
-            height={300}
-            className="w-full aspect-square object-cover rounded-[10px]"
-            priority
-          />
+          <div className="overflow-hidden rounded-[10px]">
+            <Image
+              src="https://portofolio-florinbighiu.vercel.app/_next/image?url=%2F283185044_2606893879444159_1671680474858766700_n.jpg&w=640&q=95"
+              alt="Florin Bighiu"
+              width={300}
+              height={300}
+              className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+              priority
+            />
+          </div>
 
           <div className="mt-5 flex flex-col gap-[5px]">
             <div className="font-display font-bold text-[1.1rem] text-primary">Florin Bighiu</div>
@@ -147,6 +149,17 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Scroll cue */}
+      <a
+        href="#about"
+        aria-label="Scroll to about section"
+        className="enter absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-muted hover:text-accent transition-colors duration-200"
+        style={{ animationDelay: "0.6s" }}
+      >
+        <span className="font-mono text-[0.6rem] tracking-[0.2em] uppercase">Scroll</span>
+        <span className="scroll-cue-track" />
+      </a>
     </section>
   );
 }

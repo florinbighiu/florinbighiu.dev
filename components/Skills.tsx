@@ -114,8 +114,9 @@ export default function Skills() {
             <div className="flex flex-col gap-4">
               {proficiencies.map(({ name, pct }) => (
                 <div key={name}>
-                  <div className="mb-[6px]">
+                  <div className="mb-[6px] flex items-baseline justify-between gap-3">
                     <span className="text-[0.85rem] font-medium text-primary">{name}</span>
+                    <span className="font-mono text-[0.7rem] text-accent tabular-nums">{pct}%</span>
                   </div>
                   <div className="h-1 bg-bg-2 rounded-full overflow-hidden">
                     <div className="xp-bar" data-width={pct} />

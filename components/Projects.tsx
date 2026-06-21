@@ -67,6 +67,7 @@ function ProjectCard({ project, delay }: { project: (typeof projects)[0]; delay:
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
 
     const onMove = (e: MouseEvent) => {
       const rect = card.getBoundingClientRect();
