@@ -14,6 +14,7 @@ test.describe("Navigation", () => {
 
     for (const [name, id] of [
       ["About", "#about"],
+      ["Experience", "#experience"],
       ["Projects", "#projects"],
       ["Skills", "#skills"],
       ["Contact", "#contact"],

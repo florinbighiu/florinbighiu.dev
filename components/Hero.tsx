@@ -33,12 +33,13 @@ export default function Hero() {
 
           {/* Sub */}
           <p className="enter mt-6 text-[1.1rem] text-muted leading-[1.7] max-w-[480px]" style={{ animationDelay: "0.25s" }}>
-            <strong className="text-primary font-medium">QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
-            specializing in <strong className="text-primary font-medium">Playwright E2E</strong> testing,{" "}
-            <strong className="text-primary font-medium">CI/CD with GitHub Actions</strong>, and API testing —
-            built on hands-on <strong className="text-primary font-medium">React</strong>,{" "}
-            <strong className="text-primary font-medium">Java / Spring</strong> full-stack experience.
-            Focused on reliable releases, clean code, and structured bug reporting.
+            <strong className="text-primary font-medium">ISTQB certified QA Automation Engineer &amp; Full-Stack Developer</strong>{" "}
+            — <strong className="text-primary font-medium">Playwright E2E</strong>,{" "}
+            <strong className="text-primary font-medium">CI/CD with GitHub Actions</strong> and API testing,
+            built on hands-on <strong className="text-primary font-medium">React</strong> and{" "}
+            <strong className="text-primary font-medium">Java / Spring Boot</strong> experience.
+            Currently automating tests and shipping features for{" "}
+            <strong className="text-primary font-medium">peviitor.ro</strong>.
           </p>
 
           {/* CTAs */}

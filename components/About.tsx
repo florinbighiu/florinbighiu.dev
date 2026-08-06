@@ -3,10 +3,10 @@
 import { useReveal } from "@/hooks/useReveal";
 
 const stats = [
-  { num: "3",   label: "Years hands-on" },
-  { num: "E2E", label: "Playwright automation" },
-  { num: "5",   label: "Projects shipped" },
-  { num: "1.5y", label: "Full-stack bootcamp" },
+  { num: "3+",     label: "Years hands-on" },
+  { num: "ISTQB",  label: "CTFL v4.0 certified" },
+  { num: "5",      label: "Projects shipped" },
+  { num: "1.5y",   label: "Full-stack bootcamp" },
 ];
 
 const details = [
@@ -15,6 +15,7 @@ const details = [
   { icon: "✉️", text: "florin.bighiu1@gmail.com",     href: "mailto:florin.bighiu1@gmail.com" },
   { icon: "💼", text: "linkedin.com/in/florin-bighiu", href: "https://www.linkedin.com/in/florin-bighiu/" },
   { icon: "🐙", text: "github.com/florinbighiu",      href: "https://github.com/florinbighiu" },
+  { icon: "🗣️", text: "Romanian (native) · English (C1)", href: null },
 ];
 
 export default function About() {
@@ -41,14 +42,26 @@ export default function About() {
         {/* Bio – full width (exact CV summary) */}
         <div ref={bioRef} className="reveal max-w-[780px] space-y-5 text-[1.05rem] text-muted leading-[1.8]">
           <p>
-            <strong className="text-primary font-medium">Full Stack Developer</strong> with 3 years of
-            hands-on experience through self-study, personal projects, and an intensive 1.5-year
-            full-stack bootcamp. Skilled in React, Java, JavaScript/TypeScript, and REST APIs, with a
-            focus on <strong className="text-primary font-medium">Playwright E2E automation</strong>,
-            CI/CD pipelines with GitHub Actions, API testing with Postman, structured bug reporting, and{" "}
-            <strong className="text-primary font-medium">AI agentic workflows</strong>.
-            Proactive and detail-oriented, with a continuous learning mindset and a practical approach
-            to problem-solving.
+            <strong className="text-primary font-medium">ISTQB certified QA Automation Engineer</strong> with
+            3+ years of combined hands-on experience across full-stack training, production projects and
+            open-source work. Currently building scrapers, automated tests and frontend features for{" "}
+            <a
+              href="https://peviitor.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent no-underline hover:underline"
+            >
+              peviitor.ro
+            </a>
+            , a live open-source job platform.
+          </p>
+          <p>
+            Strong in <strong className="text-primary font-medium">test automation</strong> (Playwright,
+            JUnit), <strong className="text-primary font-medium">API testing</strong> (Postman),{" "}
+            <strong className="text-primary font-medium">CI/CD</strong> (GitHub Actions) and test design,
+            with a <strong className="text-primary font-medium">full-stack background</strong> in
+            JavaScript/TypeScript, React, Java and Spring Boot — plus day-to-day{" "}
+            <strong className="text-primary font-medium">AI-driven development</strong> with Claude Code.
           </p>
         </div>
 

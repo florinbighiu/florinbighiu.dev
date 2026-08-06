@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
@@ -52,7 +53,7 @@ export default function Nav() {
       <div className="flex items-center gap-3">
         {/* CTA */}
         <a
-          href="/FLORIN_BIGHIU_Resume_2026-07-16-2-1.pdf"
+          href="/FLORIN_BIGHIU_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="font-mono text-[0.78rem] font-medium tracking-[0.08em] uppercase text-bg bg-accent px-5 py-2 rounded-full hover:opacity-85 hover:-translate-y-px transition-all duration-200"

@@ -2,12 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-const testingSkills  = ["Playwright E2E", "Jest", "JUnit", "Postman / API Testing", "Unit Testing", "Regression Testing", "Bug Reporting"];
+const testingSkills  = ["ISTQB CTFL v4.0", "Playwright E2E", "JUnit", "Jest", "Postman / API Testing", "Test Design", "Regression Testing", "Bug Reporting"];
 const frontendSkills = ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"];
 const backendSkills  = ["Java", "Spring Boot", "REST APIs", "Node.js", "Express"];
 const dbSkills       = ["PostgreSQL", "SQL", "MongoDB"];
-const aiSkills       = ["Claude Code", "RAG", "Tool calling", "AI-assisted dev"];
-const toolSkills     = ["Git", "GitHub Actions", "CI/CD", "Agile", "IntelliJ", "VS Code", "Linux"];
+const aiSkills       = ["Claude Code", "AI-Driven Development", "Agentic workflows"];
+const toolSkills     = ["Git", "GitHub Actions", "CI/CD", "Agile", "Linux", "IntelliJ", "VS Code"];
 
 const proficiencies = [
   { name: "Playwright E2E & Test Automation", pct: 85 },
@@ -93,8 +93,9 @@ export default function Skills() {
           Skills &amp; Tech
         </h2>
         <p className="text-muted leading-[1.7] mt-4 max-w-[640px]">
-          Quality engineering first — automated and manual testing across the stack — backed by
-          full-stack development and AI-assisted workflows.
+          Quality engineering first — test automation, API testing and test design across the stack —
+          backed by a full-stack background in JavaScript/TypeScript, React, Java and Spring Boot,
+          and day-to-day AI-driven development.
         </p>
 
         {/* Bento grid */}

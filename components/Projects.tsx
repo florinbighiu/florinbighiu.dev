@@ -6,35 +6,35 @@ import { useEffect, useRef } from "react";
 const projects = [
   {
     num: "01",
+    category: "Client Website · Live",
+    title: "ClarityCristal",
+    description:
+      "Delivered and maintain a live commercial website for a cleaning business in Spain — SEO structured data, sitemap, Google Search Console, and GDPR compliance pages. QA focus: manual validation of contact/booking flows, responsive layouts, and cross-device behaviour.",
+    tags: ["Next.js", "Tailwind CSS", "Claude Code", "SEO", "Manual QA"],
+    image: "/screenshots/claritycristal.png",
+    live: "https://claritycristal.com",
+  },
+  {
+    num: "02",
     category: "E-Commerce · QA",
     title: "EcomX",
     description:
-      "Full-stack store with product browsing, filtering, cart, secure login, and admin product management. QA focus: manual test cases for auth, CRUD, cart and filtering; Postman API checks; and Playwright smoke/regression suites running in GitHub Actions CI.",
+      "Full-stack store with product browsing, filtering, cart, secure login, and admin product management. QA focus: a Playwright smoke/regression suite running on every push via GitHub Actions CI — gating merges on auth, CRUD, cart and filtering flows — plus manual test cases and Postman REST endpoint checks.",
     tags: ["React", "Java", "Spring Boot", "PostgreSQL", "Postman", "Playwright"],
     image: "/screenshots/ecomx.png",
     github: "https://github.com/florinbighiu/El-proyecte-grande",
     live: "https://el-proyecte-grande.vercel.app",
   },
   {
-    num: "02",
-    category: "Productivity · QA",
+    num: "03",
+    category: "Task Management · QA",
     title: "Momentum",
     description:
-      "Full-stack task management app with authentication, organization switching, and task status updates. QA focus: regression scenarios around login, org switching, task creation/update, and permission-sensitive flows.",
+      "Full-stack task management platform with authentication, organization switching, and task workflows. QA focus: regression scenarios for login, permission-sensitive flows, and the full task lifecycle.",
     tags: ["React", "Java", "Spring Boot", "PostgreSQL", "Clerk"],
     image: "/screenshots/momentum.png",
     github: "https://github.com/florinbighiu/manifest-app",
     live: "https://momentum-pi-wheat.vercel.app",
-  },
-  {
-    num: "03",
-    category: "Client Site · QA",
-    title: "ClarityCristal",
-    description:
-      "Production marketing website for a window and solar-panel cleaning business, with services, contact, and booking paths. QA focus: manual validation of contact/booking flows, responsive layouts, and cross-device behaviour.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Manual QA"],
-    image: "/screenshots/claritycristal.png",
-    live: "https://claritycristal.com",
   },
   {
     num: "04",

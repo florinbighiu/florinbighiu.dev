@@ -17,7 +17,7 @@ test.describe("Home page", () => {
   });
 
   test("renders all primary sections", async ({ page }) => {
-    for (const id of ["#home", "#about", "#projects", "#skills", "#contact"]) {
+    for (const id of ["#home", "#about", "#experience", "#projects", "#skills", "#contact"]) {
       await expect(page.locator(id)).toBeVisible();
     }
   });
